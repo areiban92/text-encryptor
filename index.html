@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <!--Adding Google Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="logo-container">
+            <img class="logo" src="images/logo.svg" alt="Logo Alura Latam">
+        </header>
+
+        <section class="interactive-area">
+            <div class="text-area">
+                <textarea class="input-text" placeholder="Ingrese el texto aquí" autofocus></textarea>
+                <p class="info-input-text">Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="buttons-area">
+                <button class="btn encrypt-btn" type="button">Encriptar</button>
+                <button class="btn decrypt-btn" type="button">Desencriptar</button>
+            </div>
+        </section>
+
+        <aside class="informative-area">
+            <img class="informative-image" src="images/character.svg" alt="Personaje observando la entrada de texto" hidden>
+
+            <div class="informative-messages">
+                <p class="message-title"><strong>Ningún mensaje fue encontrado</strong></p>
+                <p class="message-description">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+
+            <textarea class="show-text" disabled style="display:none">Aquí se mostrará el texto encriptado o desencriptado</textarea>
+
+            <button class="btn copy-btn" type="button" hidden>Copiar</button>
+        </aside>
+        
+        <script src="scripts/encryter.js"></script>
+    </body>
+</html>

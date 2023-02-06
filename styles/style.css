@@ -1,0 +1,205 @@
+:root{
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+body{
+    background-color: #F3F5FC;
+    padding-bottom: 40px;
+}
+
+.logo-container{
+    min-height: 96px;
+    position: relative;
+    /*border: 2px solid black;*/
+}
+
+.logo{
+    position: absolute;
+    min-height: 48px;
+    width: auto;
+    top: 50%;
+    left: 16px;
+    transform: translate(0, -50%);
+}
+
+.interactive-area{
+    display: flex;
+    flex-direction: column;
+    margin: 56px 16px 0 16px;
+    gap: 16px;
+    /*border: 1px solid black;*/
+}
+
+.input-text{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: calc(317px - 16px - 18px);
+    resize: none;
+    
+    font: inherit;
+    line-height: 1.5;
+    color: #0A3871;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.info-input-text{
+    min-height: 18px;
+    font-size: 0.375rem;
+    line-height: 1.5;
+    color: #495057;
+}
+
+.buttons-area{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.btn{
+    width: 100%;
+    min-height: 67px;
+    font-size: 0.5rem;
+    line-height: 0.84;
+    text-align: center;
+
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+}
+
+.encrypt-btn{
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+
+.decrypt-btn{
+    color: #0A3871;
+}
+
+.informative-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 64px 16px 0 16px;
+    padding: 32px;
+    text-align: center;
+    gap: 32px;
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    /*border: 1px solid black;*/
+}
+
+.informative-image{
+    display: none;
+    width: 100%;
+}
+
+.message-title{
+    min-height: 58px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1.2;
+    color: #343A40;
+}
+
+.message-description{
+    min-height: 48px;
+    font-size: 0.5rem;
+    line-height: 1.5;
+    color: #495057;
+}
+
+.show-text{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 432px;
+    resize: none;
+
+    font: inherit;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: #495057;
+    text-align: left;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.copy-btn{
+    width: 100%;
+    color: #0A3871;
+}
+
+@media screen and (min-width: 600px){
+    .logo{
+        left: 40px;
+    }
+
+    .interactive-area{
+        margin: 116px 40px 0 40px;
+    }
+
+    .input-text{
+        min-height: calc(614px - 16px - 18px);
+    }
+
+    .buttons-area{
+        flex-direction: row;
+    }
+
+    .btn{
+        width: calc((100% - 24px) / 2);
+    }
+
+    .informative-area{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    .copy-btn{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    body{
+        padding: 40px;
+        display: flex;
+        gap: 80px;
+    }
+
+    .logo-container{
+        width: 10%;
+    }
+
+    .logo{
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .interactive-area{
+        margin: 128px 0 32px 0;
+        width: calc((100% - 10% - 80px - 80px) * 0.60);
+    }
+
+    .informative-area{
+        margin: 0;
+        width: calc((100% - 10% - 80px - 80px) * 0.40);
+    }
+
+    .informative-image{
+        display: block;
+    }
+}
