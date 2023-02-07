@@ -90,8 +90,8 @@ function showInformativeContent(){
     showText.style.display = "none";
     copyButton.style.display = "none";
 
-    //Show informative image if the display is greater or equal to 1100px of wide
-    if(window.screen.width >= 1100){
+    //Show informative image if the display is greater or equal to 1000px of wide
+    if(window.screen.width >= 1000){
         informativeImage.style.display = "block";
     }
     informativeMessages.style.display = "block";
